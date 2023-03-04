@@ -1,0 +1,17 @@
+Pick three websites to get tech news -> Tech Crunch, Gizmodo, Wired
+Allow for them to make a search
+Grab the headline
+Grab the first paragraph
+grab the URL
+Create a saved article 
+	-Article model
+		-saves what the user has saved
+
+Create Likes and dislikes
+	-Keep track of categories?
+	-Create pop ups that suggest to the user what they may or may not like
+
+Create user sign in
+	-User model
+
+Nav will have home, liked articles, and scrapes

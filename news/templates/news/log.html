@@ -1,0 +1,10 @@
+{% extends 'news/layout.html' %}
+
+{% block body %}
+
+    {% for scrape in scrapes %}
+    <div class="website">Website Search: {{scrape.website}}</div>
+    <div class="search">Query: {{scrape.search}}</div>
+    <div class="time">Time of search {{scrape.time}}</div>
+
+{% endblock %}

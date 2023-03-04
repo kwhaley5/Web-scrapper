@@ -1,0 +1,26 @@
+{% extends 'news/layout.html' %}
+
+{% block body %}
+
+<form class="search-container" method="get" action="{% url 'index' %}">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" class="btn btn-primary">
+</form>
+
+{% if select %}
+<p>Please select a valid website</p>
+{% end if %}
+
+<div class="article-container">
+    {% for article in articles %}
+    <div class="headline">{{article.headline}}</div>
+    <div class="article-body">{{article.body}}</div>
+    <div class="article-url"><a href="{{articl.url}}">Read full article</a></div>
+    <button class="like">Put like button here</button>
+    <button class="dislike">Put dislike here</button>
+    {% endfor %}
+</div>
+
+
+{% endblock %}

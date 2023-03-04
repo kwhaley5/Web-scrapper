@@ -1,0 +1,43 @@
+body {
+    padding-bottom: 4000px;
+}
+.nav-container {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    column-gap: 1em;
+}
+
+.name {
+    position: absolute;
+    left: 10px;
+}
+
+.home {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 2em;
+}
+
+.dropdown {
+    margin-right: 3em;
+    width: 10em;
+}
+
+.search {
+    margin-right: 3em;
+    width: 20em
+}
+
+.search-container > label {
+    margin-right: 1em;
+}

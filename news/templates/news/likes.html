@@ -1,0 +1,15 @@
+{% extends 'news/layout.html' %}
+
+{% block body %}
+
+    <div class="article-container">
+        {% for article in articles %}
+        <div class="headline">{{article.headline}}</div>
+        <div class="article-body">{{article.body}}</div>
+        <div class="article-url"><a href="{{articl.url}}">Read full article</a></div>
+        <button class="like">Put like button here</button>
+        <button class="dislike">Put dislike here</button>
+        {% endfor %}
+    </div>
+
+{% endblock %}
